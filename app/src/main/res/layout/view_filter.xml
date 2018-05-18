@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/general_padding">
+
+    <TextView
+        android:id="@+id/frag_search_title"
+        android:textColor="@color/text_white"
+        android:text="@string/filter_field_title"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/frag_overview_search_field"
+        android:background="@color/text_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        android:focusedByDefault="false"
+        android:focusable="false" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_category"
+        android:title="Category">
+        <menu>
+            <item
+                android:id="@+id/nav_category_categories"
+                android:title="All"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/nav_category_starred"
+                android:title="Starred"
+                android:checkable="true">
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_personal"
+        android:title="Personal">
+        <menu>
+            <item
+                android:id="@+id/nav_personal_setting"
+                android:title="Settings" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/view_overview_category_name"
+        android:layout_width="@dimen/default_dim"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/regular_text"
+        android:textColor="@color/text_white"
+        android:padding="@dimen/general_padding"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/view_overview_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/view_overview_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/view_overview_category_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:background="#fff"
+        style="?android:attr/buttonBarStyle">
+
+        <ImageButton
+            android:id="@+id/view_overview_star_btn"
+            android:contentDescription="@string/settings_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_star_empty"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#455C63"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/view_overview_remove_btn"
+            android:contentDescription="@string/remove_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_remove_item"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

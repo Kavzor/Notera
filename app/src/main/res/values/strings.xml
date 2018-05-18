@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Notera</string>
+    <string name="new_item_image_desc">New item</string>
+    <string name="new_item_title">Add new item</string>
+    <string name="filter_field_title">Filter</string>
+    <string name="input_category_name">Category Name</string>
+    <string name="input_category_finish_btn">Create Category</string>
+    <string name="note_title_title">Tile of the note</string>
+    <string name="note_title_hint">Insert title</string>
+    <string name="note_text_title">Content of the note</string>
+    <string name="note_text_hint">Insert text</string>
+    <string name="remove_item">Remove item</string>
+    <string name="settings_item">Settings</string>
+    <string name="ac_previous">Display previous category</string>
+    <string name="ac_next">Display next category</string>
+</resources>
